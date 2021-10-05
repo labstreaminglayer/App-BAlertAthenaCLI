@@ -4,7 +4,7 @@ BAlertAthenaCLI creates an LSL stream and streams data over LSL from a B-Alert X
 
 It is based on the [App-BAlert LSL app](https://github.com/labstreaminglayer/App-BAlert/releases) but does not require Qt (somewhat simplifying the build process), and is designed to be run from the command line. 
 
-It requires the Athena SDK from ABM. It does not required the BAlert-Live application to run, as it connects directly to the device. However, it does require the BAlert application to be installed as certain configuration files from the BAlert app are required. 
+It requires the [Athena SDK](https://www.advancedbrainmonitoring.com/products/b-alert-software#section-b-alert-live) from ABM. It does not required the [BAlert-Live](https://www.advancedbrainmonitoring.com/products/b-alert-software#section-b-alert-live) application to run, as it connects directly to the device. However, it does require the BAlert-Live application to be installed as certain configuration files from BAlert-Live are required. 
 
 # Installation 
 
@@ -21,8 +21,8 @@ It requires the Athena SDK from ABM. It does not required the BAlert-Live applic
 
 **Dependencies**:
 
-* [liblsl i386 release v 1.14](https://github.com/sccn/liblsl/releases/tag/v1.14.0) -- download and extract. (Note: Only tested with liblsl 1.14; may not work with 1.15 or higher.)
-* ABM Athena SDK -- download and extract.
+* [liblsl i386 release v 1.14.0](https://github.com/sccn/liblsl/releases/tag/v1.14.0) -- download and extract. (Note: Only tested with liblsl 1.14; may not work with 1.15 or higher.)
+* ABM BAlert Athena SDK.
 * The Windows 10 SDK 10.0.20348.0 or higher for C++ 17 compatibility ([see here](https://docs.microsoft.com/en-us/cpp/overview/install-c17-support?view=msvc-160)). This may be installable as a VisualStudio component or separately. 
 
 1. Clone or download this repository.
