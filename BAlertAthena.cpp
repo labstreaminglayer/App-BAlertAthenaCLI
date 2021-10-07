@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include <tchar.h>
-#include <filesystem>
 
 // BAlert API
 #include <Windows.h>
@@ -9,6 +8,16 @@
 #pragma comment(lib, "BAlert.lib")
 // LSL API
 #include <lsl_cpp.h>
+
+#ifdef __cpp_lib_filesystem
+    #include <filesystem>
+    namespace fs = std::filesystem;
+#elif __cpp_lib_experimental_filesystem
+    #include <experimental/filesystem>
+    namespace fs = std::experimental::filesystem;
+#else
+    #error "no filesystem support"
+#endif
 
 // some constant device properties
 const char* const name_by_type[] = { "None","X10","X24","X4" };
@@ -23,11 +32,11 @@ int main(int argc, char* argv[])
 
 		std::cout << "checking configuration ..." << std::endl;
 
-		std::filesystem::path cfgfoldername = ".\\Config";
-		std::filesystem::path cfgpath = std::filesystem::absolute(cfgfoldername);
+		fs::path cfgfoldername = "Config\\";
+		fs::path cfgpath = fs::absolute(cfgfoldername);
 		std::string fullPathChar = cfgpath.string();
 
-		bool configExists = std::filesystem::exists(cfgpath);
+		bool configExists = fs::exists(cfgpath);
 		if (!configExists) {
 			throw std::runtime_error("Config folder is missing.");
 		}
@@ -150,4 +159,3 @@ int main(int argc, char* argv[])
 	}
 	return 0;
 }
-
