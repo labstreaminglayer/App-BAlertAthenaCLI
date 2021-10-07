@@ -21,17 +21,16 @@ It requires the [Athena SDK](https://www.advancedbrainmonitoring.com/products/b-
 
 **Dependencies**:
 
-* [liblsl i386 release v 1.14.0](https://github.com/sccn/liblsl/releases/tag/v1.14.0) -- download and extract. (Note: Only tested with liblsl 1.14; may not work with 1.15 or higher.)
+* [liblsl i386 release](https://github.com/sccn/liblsl/releases/tag/v1.15.2) -- download and extract. (Note: Tested with version 1.15.2.)
 * ABM BAlert Athena SDK.
 * The Windows 10 SDK 10.0.20348.0 or higher for C++ 17 compatibility ([see here](https://docs.microsoft.com/en-us/cpp/overview/install-c17-support?view=msvc-160)). This may be installable as a VisualStudio component or separately. 
 
 1. Clone or download this repository.
 2. Copy/move the ABM Athena SDK to a folder named `SDK` that is parallel to the root folder of this repository. 
-3. Move the liblsl folder (`liblsl-1.14.0-Win_i386`) so that it is parallel to the root folder of this repository. (So you should have a folder containing three folders: this repo, the SDK, and liblsl)
+3. Move the liblsl folder (`liblsl-1.15.2-Win_i386`) so that it is parallel to the root folder of this repository. (So you should have a folder containing three folders: this repo, the SDK, and liblsl)
 4. Double-click (or open) the `BAlertAthena.sln` to open the project in Visual Studio 2019.
-5. Under Project, Properties, C/C++, Language, set the C++ Language Standard property to `ISO C++17 Standard`.
-6. Select `Release` and `x86` from the target dropdowns.
-7. Build. The executable will be in the `Release` folder. 
-8. Copy the `lsl.dll` file from the `liblsl-1.14.0-Win_i386\bin` folder into the `Release` folder. 
-9. Copy all of the dlls from the `SDK\bin` folder into the `Release` folder. 
-10. Copy the `Config` folder from the BAlert-Live app (as indicated under Installation above) to your `Release` folder (so that it is a subfolder called `Config` in the folder where your executable is located).
+5. Select `Release` and `x86` from the target dropdowns.
+6. Build. The executable will be in the `Release` folder. 
+7. Copy the `lsl.dll` file from the `liblsl-1.15.2-Win_i386\bin` folder into the `Release` folder. 
+8. Copy all of the dlls from the `SDK\bin` folder into the `Release` folder. 
+9. Copy the `Config` folder from the BAlert-Live app (as indicated under Installation above) to your `Release` folder (so that it is a subfolder called `Config` in the folder where your executable is located).

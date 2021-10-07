@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\SDK\include;..\liblsl-1.14.0-Win_i386\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\SDK\include;..\liblsl-1.15.2-Win_i386\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\liblsl-1.14.0-Win_i386\lib;..\liblsl-1.14.0-Win_i386\bin;..\SDK\lib;..\SDK\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\liblsl-1.15.2-Win_i386\lib;..\liblsl-1.15.2-Win_i386\bin;..\SDK\lib;..\SDK\bin</AdditionalLibraryDirectories>
       <AdditionalDependencies>ABM_Athena.lib;ABM_Datastreaming.lib;ABM_PlayEbs.lib;ABM_ThirdPartyCommunication.lib;BAlert.lib;BAlert_Classification.lib;Balert_DataFiltering.lib;Balert_DefFile.lib;BAlert_EventHandling.lib;BAlert_HRAnalysis.lib;BAlert_Performance.lib;BAlert_PSD.lib;BAlert_Report.lib;BAlert_SignalHandling.lib;BAlert_SignalPrinting.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\SDK\include;..\liblsl-1.14.0-Win_i386\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\SDK\include;..\liblsl-1.15.2-Win_i386\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -113,7 +113,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\liblsl-1.14.0-Win_i386\lib;..\liblsl-1.14.0-Win_i386\bin;..\SDK\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\liblsl-1.15.2-Win_i386\lib;..\liblsl-1.15.2-Win_i386\bin;..\SDK\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>ABM_Athena.lib;ABM_Datastreaming.lib;ABM_PlayEbs.lib;ABM_ThirdPartyCommunication.lib;BAlert.lib;BAlert_Classification.lib;Balert_DataFiltering.lib;Balert_DefFile.lib;BAlert_EventHandling.lib;BAlert_HRAnalysis.lib;BAlert_Performance.lib;BAlert_PSD.lib;BAlert_Report.lib;BAlert_SignalHandling.lib;BAlert_SignalPrinting.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
